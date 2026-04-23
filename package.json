@@ -1,0 +1,20 @@
+{
+  "name": "sample-ds",
+  "version": "0.1.0",
+  "description": "IRIS Protocol Design System — color, typography, spacing, radius, shadow, and animation tokens",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Knox-kim/sample-ds.git"
+  }
+}
