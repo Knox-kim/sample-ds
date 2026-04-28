@@ -8,6 +8,7 @@ export const radius = {
   md: 8,      // cards, dropdowns
   lg: 12,     // modals, large cards
   xl: 16,     // hero panels, feature cards
+  24: 24,     // L2 surface
   40: 40,     // large cards, pill buttons
   full: 9999, // circular buttons
 } as const;
@@ -21,6 +22,7 @@ export const cssVars = {
   "--iris-radius-md": "8px",
   "--iris-radius-lg": "12px",
   "--iris-radius-xl": "16px",
+  "--iris-radius-24": "24px",
   "--iris-radius-40": "40px",
   "--iris-radius-full": "9999px",
 } as const;

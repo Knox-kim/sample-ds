@@ -19,15 +19,15 @@ export const layer = {
   },
   2: {
     bg: color.bg.subtle,
-    radius: radius.md,
+    radius: radius[24],
     padding: space[4],
     gap: space[6],
   },
   3: {
     bg: color.bg.muted,
-    radius: radius.sm,
+    radius: radius.md,
     padding: space[3],
-    gap: space[1],
+    gap: space[2],
   },
 } as const;
 
