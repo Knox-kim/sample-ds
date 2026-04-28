@@ -9,8 +9,8 @@ export const layer = {
   },
   1: {
     bg: color.bg.default,
-    radius: radius.xl,
-    padding: space[5],
+    radius: radius[40],
+    padding: space[6],
     shadow: shadow.sm,
   },
   2: {

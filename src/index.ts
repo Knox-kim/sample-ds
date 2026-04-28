@@ -13,7 +13,7 @@ export { breakpoint, mq } from "./tokens/breakpoints";
 export { borderWidth, focusRing } from "./tokens/borders";
 export { opacity } from "./tokens/opacity";
 export { layer } from "./tokens/layers";
-export { button, input, badge, avatar, modal, tooltip } from "./tokens/components";
+export { button, listItem, input, badge, avatar, modal, tooltip } from "./tokens/components";
 
 // ── CSS Variable Generation ──────────────────────────────
 export { generateCssVars } from "./css-vars";

@@ -1,3 +1,5 @@
+import { color } from "./colors";
+import { borderWidth } from "./borders";
 import { radius } from "./radius";
 import { space } from "./spacing";
 
@@ -5,7 +7,18 @@ export const button = {
   height: { 32: 32, 40: 40, 48: 48 },
   paddingX: { 32: space[3], 40: space[4], 48: space[5] },
   radius: radius.md,
+  radiusPill: radius[40],
   iconGap: space[1.5],
+} as const;
+
+export const listItem = {
+  bg: color.bg.default,
+  borderWidth: borderWidth.thin,
+  borderColor: color.border.default,
+  radius: radius.md,
+  padding: space[4],
+  height: 68,
+  gap: space[1],
 } as const;
 
 export const input = {
