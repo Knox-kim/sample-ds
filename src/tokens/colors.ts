@@ -133,43 +133,12 @@ export const color = {
     subtle: palette.green[100],
     text: palette.green[500],
   },
-} as const;
 
-// ── Protocol / Venue Brand Colors ────────────────────────
-// Canonical brand color per protocol. One source of truth.
-
-export const venue = {
-  aave: "#2EBAC6",
-  spark: "#F5AC3D",
-  morpho: "#5B5FEF",
-  fluid: "#0A6B6B",
-} as const;
-
-export const protocol = {
-  keyrock: "#627EEA",
-  apostro: "#D17A2B",
-  gauntlet: "#1A73E8",
-  circle: "#2775CA",
-  re7: "#20C3A5",
-  steakhouse: "#A04B3F",
-} as const;
-
-// ── Token (Asset) Brand Colors ───────────────────────────
-
-export const asset = {
-  eth: "#627EEA",
-  usdc: "#2775CA",
-  usdt: "#26A17B",
-  wsteth: "#00A3FF",
-  steth: "#00A3FF",
-} as const;
-
-// ── Rate Risk Tiers ──────────────────────────────────────
-
-export const riskTier = {
-  tight: "#FF9385",
-  mid: "#F2CC64",
-  wide: "#24CB6F",
+  risk: {
+    tight: "#FF9385",
+    mid: "#F2CC64",
+    wide: "#24CB6F",
+  },
 } as const;
 
 // ── CSS Custom Property Map ──────────────────────────────
@@ -235,29 +204,8 @@ export const cssVars = {
   "--iris-success-subtle": color.success.subtle,
   "--iris-success-text": color.success.text,
 
-  // venue
-  "--iris-venue-aave": venue.aave,
-  "--iris-venue-spark": venue.spark,
-  "--iris-venue-morpho": venue.morpho,
-  "--iris-venue-fluid": venue.fluid,
-
-  // protocol
-  "--iris-protocol-keyrock": protocol.keyrock,
-  "--iris-protocol-apostro": protocol.apostro,
-  "--iris-protocol-gauntlet": protocol.gauntlet,
-  "--iris-protocol-circle": protocol.circle,
-  "--iris-protocol-re7": protocol.re7,
-  "--iris-protocol-steakhouse": protocol.steakhouse,
-
-  // asset
-  "--iris-asset-eth": asset.eth,
-  "--iris-asset-usdc": asset.usdc,
-  "--iris-asset-usdt": asset.usdt,
-  "--iris-asset-wsteth": asset.wsteth,
-  "--iris-asset-steth": asset.steth,
-
-  // risk tier
-  "--iris-risk-tight": riskTier.tight,
-  "--iris-risk-mid": riskTier.mid,
-  "--iris-risk-wide": riskTier.wide,
+  // risk
+  "--iris-risk-tight": color.risk.tight,
+  "--iris-risk-mid": color.risk.mid,
+  "--iris-risk-wide": color.risk.wide,
 } as const;

@@ -2,7 +2,7 @@
 // Independent token system for iris-frontend.
 
 // ── Tokens ───────────────────────────────────────────────
-export { palette, color, venue, protocol, asset, riskTier } from "./tokens/colors";
+export { palette, color } from "./tokens/colors";
 export { fontFamily, fontWeight, typeScale, textStyle, iconSize } from "./tokens/typography";
 export { space, layout, container } from "./tokens/spacing";
 export { radius } from "./tokens/radius";
