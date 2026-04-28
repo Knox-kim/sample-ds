@@ -8,6 +8,7 @@ import { cssVars as zIndexVars } from "./tokens/z-index";
 import { cssVars as breakpointVars } from "./tokens/breakpoints";
 import { cssVars as borderVars } from "./tokens/borders";
 import { cssVars as opacityVars } from "./tokens/opacity";
+import { cssVars as layerVars } from "./tokens/layers";
 
 const allVars = {
   ...colorVars,
@@ -20,6 +21,7 @@ const allVars = {
   ...breakpointVars,
   ...borderVars,
   ...opacityVars,
+  ...layerVars,
 } as const;
 
 export function generateCssVars(): string {

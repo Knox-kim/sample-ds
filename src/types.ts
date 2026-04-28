@@ -7,6 +7,7 @@ import type { zIndex } from "./tokens/z-index";
 import type { breakpoint } from "./tokens/breakpoints";
 import type { borderWidth } from "./tokens/borders";
 import type { opacity } from "./tokens/opacity";
+import type { layer } from "./tokens/layers";
 
 type NestedKeys<T, Prefix extends string = ""> = {
   [K in keyof T]: T[K] extends Record<string, unknown>
@@ -24,3 +25,4 @@ export type BreakpointKey = keyof typeof breakpoint;
 export type BorderWidthKey = keyof typeof borderWidth;
 export type OpacityKey = keyof typeof opacity;
 export type IconSizeKey = keyof typeof iconSize;
+export type LayerKey = keyof typeof layer;
