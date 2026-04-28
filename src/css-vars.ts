@@ -4,6 +4,10 @@ import { cssVars as spacingVars } from "./tokens/spacing";
 import { cssVars as radiusVars } from "./tokens/radius";
 import { cssVars as shadowVars } from "./tokens/shadows";
 import { cssVars as animationVars } from "./tokens/animation";
+import { cssVars as zIndexVars } from "./tokens/z-index";
+import { cssVars as breakpointVars } from "./tokens/breakpoints";
+import { cssVars as borderVars } from "./tokens/borders";
+import { cssVars as opacityVars } from "./tokens/opacity";
 
 const allVars = {
   ...colorVars,
@@ -12,6 +16,10 @@ const allVars = {
   ...radiusVars,
   ...shadowVars,
   ...animationVars,
+  ...zIndexVars,
+  ...breakpointVars,
+  ...borderVars,
+  ...opacityVars,
 } as const;
 
 export function generateCssVars(): string {

@@ -25,6 +25,7 @@ export const palette = {
   },
 
   blue: {
+    700: "#1557B0",
     600: "#1A73E8",
     500: "#4C96F5",
     400: "#6AABF7",
@@ -33,6 +34,7 @@ export const palette = {
   },
 
   red: {
+    700: "#A52020",
     600: "#C62828",
     500: "#E5303A",
     400: "#E85C5C",
@@ -41,6 +43,7 @@ export const palette = {
   },
 
   yellow: {
+    700: "#A17200",
     600: "#C68A00",
     500: "#E5A519",
     400: "#D8B64A",
@@ -49,6 +52,7 @@ export const palette = {
   },
 
   green: {
+    700: "#086E35",
     600: "#0B8A42",
     500: "#0EA753",
     400: "#63C58B",
@@ -68,6 +72,7 @@ export const color = {
     page: palette.neutral[100],
     inverse: palette.neutral[800],
     overlay: "rgba(0, 0, 0, 0.5)",
+    disabled: palette.neutral[200],
   },
 
   text: {
@@ -84,17 +89,23 @@ export const color = {
     strong: "rgba(54, 54, 54, 0.25)",
     subtle: "rgba(54, 54, 54, 0.06)",
     focus: palette.blue[500],
+    disabled: palette.neutral[300],
   },
 
   icon: {
     default: palette.neutral[500],
     subtle: palette.neutral[400],
     inverse: palette.white,
+    primary: palette.blue[500],
+    error: palette.red[500],
+    warning: palette.yellow[500],
+    success: palette.green[500],
   },
 
   primary: {
     default: palette.blue[500],
     hover: palette.blue[600],
+    active: palette.blue[700],
     subtle: palette.blue[100],
     text: palette.white,
   },
@@ -102,6 +113,7 @@ export const color = {
   error: {
     default: palette.red[500],
     hover: palette.red[600],
+    active: palette.red[700],
     subtle: palette.red[100],
     text: palette.red[500],
   },
@@ -109,6 +121,7 @@ export const color = {
   warning: {
     default: palette.yellow[500],
     hover: palette.yellow[600],
+    active: palette.yellow[700],
     subtle: palette.yellow[100],
     text: palette.yellow[500],
   },
@@ -116,6 +129,7 @@ export const color = {
   success: {
     default: palette.green[500],
     hover: palette.green[600],
+    active: palette.green[700],
     subtle: palette.green[100],
     text: palette.green[500],
   },
@@ -159,32 +173,91 @@ export const riskTier = {
 } as const;
 
 // ── CSS Custom Property Map ──────────────────────────────
-// For generating CSS variables from tokens.
 
 export const cssVars = {
+  // bg
   "--iris-bg-default": color.bg.default,
   "--iris-bg-subtle": color.bg.subtle,
   "--iris-bg-muted": color.bg.muted,
   "--iris-bg-page": color.bg.page,
   "--iris-bg-inverse": color.bg.inverse,
   "--iris-bg-overlay": color.bg.overlay,
+  "--iris-bg-disabled": color.bg.disabled,
 
+  // text
   "--iris-text-default": color.text.default,
   "--iris-text-subtle": color.text.subtle,
   "--iris-text-muted": color.text.muted,
   "--iris-text-disabled": color.text.disabled,
   "--iris-text-inverse": color.text.inverse,
+  "--iris-text-link": color.text.link,
 
+  // border
   "--iris-border-default": color.border.default,
   "--iris-border-strong": color.border.strong,
   "--iris-border-subtle": color.border.subtle,
   "--iris-border-focus": color.border.focus,
+  "--iris-border-disabled": color.border.disabled,
 
+  // icon
+  "--iris-icon-default": color.icon.default,
+  "--iris-icon-subtle": color.icon.subtle,
+  "--iris-icon-inverse": color.icon.inverse,
+  "--iris-icon-primary": color.icon.primary,
+  "--iris-icon-error": color.icon.error,
+  "--iris-icon-warning": color.icon.warning,
+  "--iris-icon-success": color.icon.success,
+
+  // primary
   "--iris-primary": color.primary.default,
   "--iris-primary-hover": color.primary.hover,
+  "--iris-primary-active": color.primary.active,
   "--iris-primary-subtle": color.primary.subtle,
 
+  // error
   "--iris-error": color.error.default,
+  "--iris-error-hover": color.error.hover,
+  "--iris-error-active": color.error.active,
+  "--iris-error-subtle": color.error.subtle,
+  "--iris-error-text": color.error.text,
+
+  // warning
   "--iris-warning": color.warning.default,
+  "--iris-warning-hover": color.warning.hover,
+  "--iris-warning-active": color.warning.active,
+  "--iris-warning-subtle": color.warning.subtle,
+  "--iris-warning-text": color.warning.text,
+
+  // success
   "--iris-success": color.success.default,
+  "--iris-success-hover": color.success.hover,
+  "--iris-success-active": color.success.active,
+  "--iris-success-subtle": color.success.subtle,
+  "--iris-success-text": color.success.text,
+
+  // venue
+  "--iris-venue-aave": venue.aave,
+  "--iris-venue-spark": venue.spark,
+  "--iris-venue-morpho": venue.morpho,
+  "--iris-venue-fluid": venue.fluid,
+
+  // protocol
+  "--iris-protocol-keyrock": protocol.keyrock,
+  "--iris-protocol-apostro": protocol.apostro,
+  "--iris-protocol-gauntlet": protocol.gauntlet,
+  "--iris-protocol-circle": protocol.circle,
+  "--iris-protocol-re7": protocol.re7,
+  "--iris-protocol-steakhouse": protocol.steakhouse,
+
+  // asset
+  "--iris-asset-eth": asset.eth,
+  "--iris-asset-usdc": asset.usdc,
+  "--iris-asset-usdt": asset.usdt,
+  "--iris-asset-wsteth": asset.wsteth,
+  "--iris-asset-steth": asset.steth,
+
+  // risk tier
+  "--iris-risk-tight": riskTier.tight,
+  "--iris-risk-mid": riskTier.mid,
+  "--iris-risk-wide": riskTier.wide,
 } as const;

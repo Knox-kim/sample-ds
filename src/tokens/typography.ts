@@ -39,6 +39,11 @@ export const typeScale = {
     lineHeight: "18px",
     letterSpacing: "-0.4px",
   },
+  t18: {
+    fontSize: 18,
+    lineHeight: "22px",
+    letterSpacing: "-0.45px",
+  },
   t20: {
     fontSize: 20,
     lineHeight: "24px",
@@ -61,12 +66,28 @@ export const typeScale = {
 
 export const textStyle = {
   caption: { ...typeScale.t10, fontWeight: fontWeight.medium },
+  badge: { ...typeScale.t10, fontWeight: fontWeight.semibold },
   label: { ...typeScale.t12, fontWeight: fontWeight.medium },
+  tooltip: { ...typeScale.t12, fontWeight: fontWeight.regular },
+  bodySmall: { ...typeScale.t12, fontWeight: fontWeight.regular },
   body: { ...typeScale.t14, fontWeight: fontWeight.medium },
+  input: { ...typeScale.t14, fontWeight: fontWeight.regular },
+  button: { ...typeScale.t14, fontWeight: fontWeight.semibold },
+  tab: { ...typeScale.t14, fontWeight: fontWeight.semibold },
   bodyLarge: { ...typeScale.t16, fontWeight: fontWeight.medium },
   heading3: { ...typeScale.t20, fontWeight: fontWeight.bold },
   heading2: { ...typeScale.t24, fontWeight: fontWeight.bold },
   heading1: { ...typeScale.t36, fontWeight: fontWeight.medium },
+} as const;
+
+// ── Icon Sizes ───────────────────────────────────────────
+
+export const iconSize = {
+  xs: 12,
+  sm: 16,
+  md: 20,
+  lg: 24,
+  xl: 32,
 } as const;
 
 // ── CSS Custom Property Map ──────────────────────────────
@@ -91,6 +112,10 @@ export const cssVars = {
   "--iris-t16-line": "18px",
   "--iris-t16-ls": "-0.4px",
 
+  "--iris-t18-size": "18px",
+  "--iris-t18-line": "22px",
+  "--iris-t18-ls": "-0.45px",
+
   "--iris-t20-size": "20px",
   "--iris-t20-line": "24px",
   "--iris-t20-ls": "-0.5px",
@@ -102,4 +127,10 @@ export const cssVars = {
   "--iris-t36-size": "36px",
   "--iris-t36-line": "48px",
   "--iris-t36-ls": "-0.6px",
+
+  "--iris-icon-size-xs": "12px",
+  "--iris-icon-size-sm": "16px",
+  "--iris-icon-size-md": "20px",
+  "--iris-icon-size-lg": "24px",
+  "--iris-icon-size-xl": "32px",
 } as const;
