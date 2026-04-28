@@ -135,9 +135,9 @@ export const color = {
   },
 
   risk: {
-    tight: "#FF9385",
-    mid: "#F2CC64",
-    wide: "#24CB6F",
+    tight: palette.red[400],
+    mid: palette.yellow[400],
+    wide: palette.green[400],
   },
 } as const;
 
